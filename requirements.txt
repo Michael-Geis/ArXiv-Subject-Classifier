@@ -1,8 +1,5 @@
-numpy
-pandas
-scikit-learn
-scikit-multilearn
 arxiv
+regex
+scikit-learn
 transformers
 torch
-datasets

@@ -1,6 +1,3 @@
-from sklearn.pipeline import Pipeline
-from sklearn.base import BaseEstimator, TransformerMixin
-import pandas as pd
 import regex
 
 
