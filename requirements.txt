@@ -3,3 +3,4 @@ regex
 scikit-learn
 transformers
 torch
+gradio
