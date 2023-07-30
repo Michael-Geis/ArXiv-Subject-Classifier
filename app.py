@@ -24,7 +24,7 @@ def parse_id(input_id):
 
 def parse_title(input_title):
     search = arxiv.Search(
-        query=f"ti:%22{input_title}%22",
+        query=f"ti:\%22{input_title}\%22",
         sort_by=arxiv.SortCriterion.Relevance,
         sort_order=arxiv.SortOrder.Descending,
         max_results=1,
