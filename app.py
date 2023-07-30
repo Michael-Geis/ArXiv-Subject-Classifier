@@ -109,4 +109,4 @@ with gr.Blocks() as demo:
         outputs=[title_title, title_predict, title_true],
     )
 
-demo.launch(inbrowser=True)
+demo.launch()
