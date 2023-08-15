@@ -94,8 +94,8 @@ with gr.Blocks() as demo:
             examples=[
                 "Attention is all you need",
                 "Etale cohomology of diamonds",
-                "Stochastic Kähler geometry: from random zeros to random metrics",
-                "Scaling asymptotics for Szegő kernels on Grauert tubes",
+                "Stochastic Kahler geometry from random zeros to random metrics",
+                "Scaling asymptotics for Szego kernels on Grauert tubes",
                 "The Wave Trace and Birkhoff Billiards",
             ],
             inputs=title_input,
