@@ -1,12 +1,14 @@
 import json
 
 
-def postprocess(model_output):
+def postprocess(model_output, threshold_probability):
     with open("./data/arxiv-label-dict.json", "r") as file:
         subject_dict = json.loads(file.read())
 
     predicted_tags = [
-        result["label"] for result in model_output[0] if result["score"] > 0.5
+        result["label"]
+        for result in model_output[0]
+        if result["score"] > threshold_probability
     ]
 
     return sorted([subject_dict[tag] for tag in predicted_tags])

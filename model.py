@@ -7,7 +7,7 @@ from preprocess import cleanse
 from postprocess import postprocess
 
 
-def predict_from_text(input_text):
+def predict_from_text(input_text, threshold_probability):
     ## Load model and create pipeline
     tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
     model = AutoModelForSequenceClassification.from_pretrained(
@@ -19,7 +19,7 @@ def predict_from_text(input_text):
     clean_title = cleanse(input_text)
     model_output = pipe(clean_title)
 
-    prediction = postprocess(model_output)
+    prediction = postprocess(model_output, threshold_probability=threshold_probability)
 
     if len(prediction) == 0:
         predict_output = "No matching tags."
