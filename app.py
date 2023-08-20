@@ -62,8 +62,8 @@ def outputs_from_id(input_id, threshold_probability):
 
 with gr.Blocks() as demo:
     gr.Markdown(
-        """# <center> Math Subject Classifier </center>
-                #### [Search](www.arxiv.org) for a math article and input its ID number below."""
+        """# <center> Math Subject Classifier 
+                ## [Search](https://arxiv.org) for a math article and input its ID number below. </center>"""
     )
     with gr.Row():
         id_input = gr.Textbox(label="arXiv ID:", placeholder="XXXX.XXXXX")
