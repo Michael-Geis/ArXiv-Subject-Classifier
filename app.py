@@ -62,12 +62,8 @@ def outputs_from_id(input_id, threshold_probability):
 
 with gr.Blocks() as demo:
     gr.Markdown(
-        """# <center> arXiv Subject Classifier
-                This demo labels an arXiv math publication with appropriate subject categories based on its title. To get subject tag predictions for an article, input its unique
-                arXiv ID (the 9 digit number appearing at the end of an article's URL). You can find the ID number of an article by searching for it on <a href="arxiv.org">arxiv.org</a>.
-                For each possible tag, the model calculates the probability that the tag is applicable. Use the slider bar to set the minimum probability required for a tag to be predicted.
-                For instance, when the slider is set to 0.50, only tags with a predicted probability of relevance over 50% will be suggested.
-                </center>"""
+        """# <center> Math Subject Classifier </center>
+                #### [Search](www.arxiv.org) for a math article and input its ID number below."""
     )
     with gr.Row():
         id_input = gr.Textbox(label="arXiv ID:", placeholder="XXXX.XXXXX")
