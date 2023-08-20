@@ -63,7 +63,7 @@ def outputs_from_id(input_id, threshold_probability):
 with gr.Blocks() as demo:
     gr.Markdown(
         """# <center> Math Subject Classifier </center>
-            <center> ## [Search](https://arxiv.org) for a math article and input its ID number below. </center>
+           ## <center> [Search](https://arxiv.org) for a math article and input its ID number below. </center>
         """
     )
     with gr.Row():
